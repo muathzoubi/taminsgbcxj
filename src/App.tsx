@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import viteLogo from '/loader.svg';
 import './App.css';
 
