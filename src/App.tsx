@@ -1,16 +1,21 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
+import { useEffect, useState } from 'react';
 import viteLogo from '/loader.svg';
 import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0);
-
+const redirct=()=>{
+  window.location.href = "https://www.tameeni.com/";
+}
+useEffect(()=>{
+setTimeout(() => {
+  redirct()
+}, 6000);
+},[])
   return (
     <>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+        <a href="#" target="_blank">
+          <img src={viteLogo} className="logo" alt=" logo" />
         </a>
       </div>
       <div className="card">
